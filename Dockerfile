@@ -17,7 +17,6 @@ RUN mvn -v \
 && mvn dependency:get -DgroupId=org.apache.maven.plugins -DartifactId=maven-scm-plugin -Dversion=1.10.0 \
 && mvn dependency:get -DgroupId=org.apache.maven.plugins -DartifactId=maven-release-plugin -Dversion=2.5.3 \
 && mvn dependency:get -DgroupId=org.sonatype.plugins -DartifactId=nexus-staging-maven-plugin -Dversion=1.6.8 \
-&& mvn dependency:get -DgroupId=org.sonarsource.scanner.maven -DartifactId=sonar-maven-plugin -Dversion=3.5.0.1254 \
 && mvn dependency:get -DgroupId=com.github.wvengen -DartifactId=proguard-maven-plugin -Dversion=2.0.14 \
 && mvn dependency:get -DgroupId=com.akathist.maven.plugins.launch4j -DartifactId=launch4j-maven-plugin -Dversion=1.7.21 \
 && mvn dependency:get -DgroupId=org.jacoco -DartifactId=jacoco-maven-plugin -Dversion=0.8.2 \
@@ -32,10 +31,8 @@ RUN mvn -v \
 && mvn dependency:get -DgroupId=org.apache.maven.plugins -DartifactId=maven-enforcer-plugin -Dversion=1.4.1 \
 && mvn dependency:get -DgroupId=org.owasp -DartifactId=dependency-check-maven -Dversion=3.0.2 \
 && mvn dependency:get -DgroupId=pl.project13.maven -DartifactId=git-commit-id-plugin -Dversion=2.2.5 \
-&& mvn dependency:get -DgroupId=org.junit.jupiter -DartifactId=junit-jupiter-api -Dversion=5.1.0 \
-&& mvn dependency:get -DgroupId=org.junit.jupiter -DartifactId=junit-jupiter-engine -Dversion=5.1.0 \
-&& mvn dependency:get -DgroupId=org.junit.platform -DartifactId=junit-platform-launcher -Dversion=1.1.0 \
-&& mvn dependency:get -DgroupId=org.junit.platform -DartifactId=junit-platform-surefire-provider -Dversion=1.1.0 \
+&& mvn dependency:get -DgroupId=org.junit.jupiter -DartifactId=junit-jupiter-engine -Dversion=5.4.0 \
+&& mvn dependency:get -DgroupId=org.junit.platform -DartifactId=junit-platform-launcher -Dversion=1.4.0 \
 && mvn dependency:get -DgroupId=org.sonatype.plexus -DartifactId=plexus-cipher -Dversion=1.7 \
 && mvn dependency:get -DgroupId=org.apache.httpcomponents -DartifactId=httpclient -Dversion=4.5.5 \
 && mvn dependency:get -DgroupId=com.intellij -DartifactId=annotations -Dversion=9.0.4 \
@@ -44,4 +41,8 @@ RUN mvn -v \
 && mvn dependency:get -DgroupId=avalon-framework -DartifactId=avalon-framework -Dversion=4.1.3 \
 && mvn dependency:get -DgroupId=org.codehaus.mojo -DartifactId=build-helper-maven-plugin -Dversion=3.0.0 \
 && mvn dependency:get -DgroupId=org.codehaus.mojo -DartifactId=versions-maven-plugin -Dversion=2.5 \
-&& mvn dependency:get -DgroupId=ch.qos.logback -DartifactId=logback-classic -Dversion=1.2.3
+&& mvn dependency:get -DgroupId=ch.qos.logback -DartifactId=logback-classic -Dversion=1.2.3 \
+&& mvn dependency:get -DgroupId=org.apache.activemq -DartifactId=activemq-client -Dversion=5.15.8 \
+&& mvn dependency:get -DgroupId=org.apache.activemq -DartifactId=activemq-broker -Dversion=5.15.8 \
+&& mvn dependency:get -DgroupId=com.splunk.logging -DartifactId=splunk-library-javalogging -Dversion=1.6.2 \
+&& mvn dependency:get -DgroupId=org.ow2.asm -DartifactId=asm -Dversion=7.0

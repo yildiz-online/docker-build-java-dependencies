@@ -24,7 +24,7 @@ RUN mvn -v \
 && mvn dependency:get -DgroupId=org.apache.maven.plugins -DartifactId=maven-source-plugin -Dversion=3.0.1 \
 && mvn dependency:get -DgroupId=org.apache.maven.plugins -DartifactId=maven-javadoc-plugin -Dversion=3.0.1 \
 && mvn dependency:get -DgroupId=org.apache.maven.plugins -DartifactId=maven-gpg-plugin -Dversion=1.6 \
-&& mvn dependency:get -DgroupId=org.jooq -DartifactId=jooq-codegen-maven -Dversion=3.10.0 \
+&& mvn dependency:get -DgroupId=org.jooq -DartifactId=jooq-codegen-maven -Dversion=3.11.8 \
 && mvn dependency:get -DgroupId=org.pitest -DartifactId=pitest-maven -Dversion=1.2.4 \
 && mvn dependency:get -DgroupId=com.spotify -DartifactId=docker-maven-plugin -Dversion=1.0.0 \
 && mvn dependency:get -DgroupId=com.spotify -DartifactId=dockerfile-maven-plugin -Dversion=1.3.6 \
@@ -44,4 +44,6 @@ RUN mvn -v \
 && mvn dependency:get -DgroupId=ch.qos.logback -DartifactId=logback-classic -Dversion=1.2.3 \
 && mvn dependency:get -DgroupId=org.apache.activemq -DartifactId=activemq-client -Dversion=5.15.8 \
 && mvn dependency:get -DgroupId=org.apache.activemq -DartifactId=activemq-broker -Dversion=5.15.8 \
-&& mvn dependency:get -DgroupId=org.ow2.asm -DartifactId=asm -Dversion=7.0
+&& mvn dependency:get -DgroupId=org.ow2.asm -DartifactId=asm -Dversion=7.0 \
+&& mvn dependency:get -DgroupId=org.liquibase -DartifactId=liquibase-core Dversion=3.6.2 \
+&& mvn dependency:get -DgroupId=com.mchange -DartifactId=c3p0 Dversion=0.9.5.2

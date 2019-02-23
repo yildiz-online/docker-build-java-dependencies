@@ -1,0 +1,16 @@
+sudo: required
+
+language: generic
+
+services:
+  - docker
+
+before_install:
+  - docker build -t moussavdb/build-java-dependencies:latest -t moussavdb/build-java-dependencies:build_$TRAVIS_BUILD_NUMBER .
+script:
+  - docker images moussavdb/build-java
+  
+after_success:
+  - docker login -u="moussavdb" -p="$DOCKER_PASSWORD";
+    docker push moussavdb/build-java-dependencies:latest;
+    docker push moussavdb/build-java-dependencies:build_$TRAVIS_BUILD_NUMBER;

@@ -44,5 +44,4 @@ RUN mvn -v \
 && mvn dependency:get -DgroupId=ch.qos.logback -DartifactId=logback-classic -Dversion=1.2.3 \
 && mvn dependency:get -DgroupId=org.apache.activemq -DartifactId=activemq-client -Dversion=5.15.8 \
 && mvn dependency:get -DgroupId=org.apache.activemq -DartifactId=activemq-broker -Dversion=5.15.8 \
-&& mvn dependency:get -DgroupId=com.splunk.logging -DartifactId=splunk-library-javalogging -Dversion=1.6.2 \
 && mvn dependency:get -DgroupId=org.ow2.asm -DartifactId=asm -Dversion=7.0

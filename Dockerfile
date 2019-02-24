@@ -45,5 +45,5 @@ RUN mvn -v \
 && mvn dependency:get -DgroupId=org.apache.activemq -DartifactId=activemq-client -Dversion=5.15.8 \
 && mvn dependency:get -DgroupId=org.apache.activemq -DartifactId=activemq-broker -Dversion=5.15.8 \
 && mvn dependency:get -DgroupId=org.ow2.asm -DartifactId=asm -Dversion=7.0 \
-&& mvn dependency:get -DgroupId=org.liquibase -DartifactId=liquibase-core Dversion=3.6.2 \
-&& mvn dependency:get -DgroupId=com.mchange -DartifactId=c3p0 Dversion=0.9.5.2
+&& mvn dependency:get -DgroupId=org.liquibase -DartifactId=liquibase-core -Dversion=3.6.2 \
+&& mvn dependency:get -DgroupId=com.mchange -DartifactId=c3p0 -Dversion=0.9.5.2

@@ -2,14 +2,14 @@ FROM moussavdb/build-java
 
 RUN mvn -v \
 && mvn dependency:get -DgroupId=org.apache.maven.plugins -DartifactId=maven-clean-plugin -Dversion=3.1.0 \
-&& mvn dependency:get -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=3.8.0 \
+&& mvn dependency:get -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=3.8.1 \
 && mvn dependency:get -DgroupId=org.apache.maven.plugins -DartifactId=maven-deploy-plugin -Dversion=2.8.2 \
-&& mvn dependency:get -DgroupId=org.apache.maven.plugins -DartifactId=maven-failsafe-plugin -Dversion=2.19.1 \
+&& mvn dependency:get -DgroupId=org.apache.maven.plugins -DartifactId=maven-failsafe-plugin -Dversion=2.22.1 \
 && mvn dependency:get -DgroupId=org.apache.maven.plugins -DartifactId=maven-install-plugin -Dversion=2.5.2 \
 && mvn dependency:get -DgroupId=org.apache.maven.plugins -DartifactId=maven-resources-plugin -Dversion=3.1.0 \
-&& mvn dependency:get -DgroupId=org.apache.maven.plugins -DartifactId=maven-surefire-plugin -Dversion=2.22.1 \
+&& mvn dependency:get -DgroupId=org.apache.maven.plugins -DartifactId=maven-surefire-plugin -Dversion=2.22.2 \
 && mvn dependency:get -DgroupId=org.apache.maven.plugins -DartifactId=maven-verifier-plugin -Dversion=1.1 \
-&& mvn dependency:get -DgroupId=org.apache.maven.plugins -DartifactId=maven-jar-plugin -Dversion=3.1.1 \
+&& mvn dependency:get -DgroupId=org.apache.maven.plugins -DartifactId=maven-jar-plugin -Dversion=3.1.2 \
 && mvn dependency:get -DgroupId=org.apache.maven.plugins -DartifactId=maven-site-plugin -Dversion=3.7.1 \
 && mvn dependency:get -DgroupId=org.apache.maven.plugins -DartifactId=maven-antrun-plugin -Dversion=1.8 \
 && mvn dependency:get -DgroupId=org.apache.maven.plugins -DartifactId=maven-assembly-plugin -Dversion=3.1.1 \
@@ -26,13 +26,10 @@ RUN mvn -v \
 && mvn dependency:get -DgroupId=org.apache.maven.plugins -DartifactId=maven-gpg-plugin -Dversion=1.6 \
 && mvn dependency:get -DgroupId=org.jooq -DartifactId=jooq-codegen-maven -Dversion=3.11.8 \
 && mvn dependency:get -DgroupId=org.pitest -DartifactId=pitest-maven -Dversion=1.2.4 \
-&& mvn dependency:get -DgroupId=com.spotify -DartifactId=docker-maven-plugin -Dversion=1.0.0 \
-&& mvn dependency:get -DgroupId=com.spotify -DartifactId=dockerfile-maven-plugin -Dversion=1.3.6 \
 && mvn dependency:get -DgroupId=org.apache.maven.plugins -DartifactId=maven-enforcer-plugin -Dversion=1.4.1 \
-&& mvn dependency:get -DgroupId=org.owasp -DartifactId=dependency-check-maven -Dversion=3.0.2 \
+&& mvn dependency:get -DgroupId=org.owasp -DartifactId=dependency-check-maven -Dversion=5.2.2 \
 && mvn dependency:get -DgroupId=pl.project13.maven -DartifactId=git-commit-id-plugin -Dversion=2.2.5 \
-&& mvn dependency:get -DgroupId=org.junit.jupiter -DartifactId=junit-jupiter-engine -Dversion=5.4.0 \
-&& mvn dependency:get -DgroupId=org.junit.platform -DartifactId=junit-platform-launcher -Dversion=1.4.0 \
+&& mvn dependency:get -DgroupId=org.junit.jupiter -DartifactId=junit-jupiter-engine -Dversion=5.5.2 \
 && mvn dependency:get -DgroupId=org.sonatype.plexus -DartifactId=plexus-cipher -Dversion=1.7 \
 && mvn dependency:get -DgroupId=org.apache.httpcomponents -DartifactId=httpclient -Dversion=4.5.5 \
 && mvn dependency:get -DgroupId=com.intellij -DartifactId=annotations -Dversion=9.0.4 \
@@ -42,8 +39,8 @@ RUN mvn -v \
 && mvn dependency:get -DgroupId=org.codehaus.mojo -DartifactId=build-helper-maven-plugin -Dversion=3.0.0 \
 && mvn dependency:get -DgroupId=org.codehaus.mojo -DartifactId=versions-maven-plugin -Dversion=2.5 \
 && mvn dependency:get -DgroupId=ch.qos.logback -DartifactId=logback-classic -Dversion=1.2.3 \
-&& mvn dependency:get -DgroupId=org.apache.activemq -DartifactId=activemq-client -Dversion=5.15.8 \
-&& mvn dependency:get -DgroupId=org.apache.activemq -DartifactId=activemq-broker -Dversion=5.15.8 \
+&& mvn dependency:get -DgroupId=org.apache.activemq -DartifactId=activemq-client -Dversion=5.15.10 \
+&& mvn dependency:get -DgroupId=org.apache.activemq -DartifactId=activemq-broker -Dversion=5.15.10 \
 && mvn dependency:get -DgroupId=org.ow2.asm -DartifactId=asm -Dversion=7.0 \
-&& mvn dependency:get -DgroupId=org.liquibase -DartifactId=liquibase-core -Dversion=3.6.2 \
+&& mvn dependency:get -DgroupId=org.liquibase -DartifactId=liquibase-core -Dversion=3.7.0 \
 && mvn dependency:get -DgroupId=com.mchange -DartifactId=c3p0 -Dversion=0.9.5.2

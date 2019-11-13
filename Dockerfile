@@ -16,6 +16,10 @@ RUN mvn -v \
 && mvn dependency:get -DgroupId=org.apache.maven.plugins -DartifactId=maven-dependency-plugin -Dversion=3.1.1 \
 && mvn dependency:get -DgroupId=org.apache.maven.plugins -DartifactId=maven-scm-plugin -Dversion=1.10.0 \
 && mvn dependency:get -DgroupId=org.apache.maven.plugins -DartifactId=maven-release-plugin -Dversion=2.5.3 \
+&& mvn dependency:get -DgroupId=be.yildiz-games -DartifactId=parent-application -Dversion=1.0.11 \
+&& mvn dependency:get -DgroupId=be.yildiz-games -DartifactId=parent -Dversion=3.0.8 \
+&& mvn dependency:get -DgroupId=be.yildiz-games -DartifactId=common-compression -Dversion=2.0.6 \
+&& mvn dependency:get -DgroupId=be.yildiz-games -DartifactId=common-configuration -Dversion=1.2.0 \
 && mvn dependency:get -DgroupId=org.sonatype.plugins -DartifactId=nexus-staging-maven-plugin -Dversion=1.6.8 \
 && mvn dependency:get -DgroupId=com.github.wvengen -DartifactId=proguard-maven-plugin -Dversion=2.0.14 \
 && mvn dependency:get -DgroupId=com.akathist.maven.plugins.launch4j -DartifactId=launch4j-maven-plugin -Dversion=1.7.21 \

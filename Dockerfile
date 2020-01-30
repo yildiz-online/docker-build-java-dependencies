@@ -9,14 +9,14 @@ RUN mvn -v \
 && mvn dependency:get -DgroupId=org.apache.maven.plugins -DartifactId=maven-resources-plugin -Dversion=3.1.0 \
 && mvn dependency:get -DgroupId=org.apache.maven.plugins -DartifactId=maven-surefire-plugin -Dversion=2.22.2 \
 && mvn dependency:get -DgroupId=org.apache.maven.plugins -DartifactId=maven-verifier-plugin -Dversion=1.1 \
-&& mvn dependency:get -DgroupId=org.apache.maven.plugins -DartifactId=maven-jar-plugin -Dversion=3.1.2 \
+&& mvn dependency:get -DgroupId=org.apache.maven.plugins -DartifactId=maven-jar-plugin -Dversion=3.2.0 \
 && mvn dependency:get -DgroupId=org.apache.maven.plugins -DartifactId=maven-site-plugin -Dversion=3.7.1 \
 && mvn dependency:get -DgroupId=org.apache.maven.plugins -DartifactId=maven-antrun-plugin -Dversion=1.8 \
-&& mvn dependency:get -DgroupId=org.apache.maven.plugins -DartifactId=maven-assembly-plugin -Dversion=3.1.1 \
+&& mvn dependency:get -DgroupId=org.apache.maven.plugins -DartifactId=maven-assembly-plugin -Dversion=3.2.0 \
 && mvn dependency:get -DgroupId=org.apache.maven.plugins -DartifactId=maven-dependency-plugin -Dversion=3.1.1 \
 && mvn dependency:get -DgroupId=org.apache.maven.plugins -DartifactId=maven-scm-plugin -Dversion=1.10.0 \
 && mvn dependency:get -DgroupId=org.apache.maven.plugins -DartifactId=maven-release-plugin -Dversion=2.5.3 \
-&& mvn dependency:get -DgroupId=be.yildiz-games -DartifactId=parent -Dversion=3.0.8 -Dpackaging=pom\
+&& mvn dependency:get -DgroupId=be.yildiz-games -DartifactId=parent -Dversion=3.0.10 -Dpackaging=pom\
 && mvn dependency:get -DgroupId=be.yildiz-games -DartifactId=common-compression -Dversion=2.0.6 \
 && mvn dependency:get -DgroupId=be.yildiz-games -DartifactId=common-configuration -Dversion=1.2.0 \
 && mvn dependency:get -DgroupId=org.sonatype.plugins -DartifactId=nexus-staging-maven-plugin -Dversion=1.6.8 \
@@ -32,7 +32,7 @@ RUN mvn -v \
 && mvn dependency:get -DgroupId=org.apache.maven.plugins -DartifactId=maven-enforcer-plugin -Dversion=1.4.1 \
 && mvn dependency:get -DgroupId=org.owasp -DartifactId=dependency-check-maven -Dversion=5.2.2 \
 && mvn dependency:get -DgroupId=pl.project13.maven -DartifactId=git-commit-id-plugin -Dversion=2.2.5 \
-&& mvn dependency:get -DgroupId=org.junit.jupiter -DartifactId=junit-jupiter-engine -Dversion=5.5.2 \
+&& mvn dependency:get -DgroupId=org.junit.jupiter -DartifactId=junit-jupiter-engine -Dversion=5.6.0 \
 && mvn dependency:get -DgroupId=org.sonatype.plexus -DartifactId=plexus-cipher -Dversion=1.7 \
 && mvn dependency:get -DgroupId=org.apache.httpcomponents -DartifactId=httpclient -Dversion=4.5.5 \
 && mvn dependency:get -DgroupId=com.intellij -DartifactId=annotations -Dversion=9.0.4 \

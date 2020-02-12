@@ -46,6 +46,6 @@ RUN mvn -v \
 && mvn dependency:get -DgroupId=org.apache.activemq -DartifactId=activemq-broker -Dversion=5.15.10 \
 && mvn dependency:get -DgroupId=org.ow2.asm -DartifactId=asm -Dversion=7.0 \
 && mvn dependency:get -DgroupId=org.liquibase -DartifactId=liquibase-core -Dversion=3.8.0 \
-&& mvn dependency:get -DgroupId=org.openjfx -DartifactId=javafx -Dversion=13.0.2 \
+&& mvn dependency:get -DgroupId=org.openjfx -DartifactId=javafx-graphics -Dversion=13.0.2 \
 && mvn dependency:get -DgroupId=net.java.dev.jna -DartifactId=jna -Dversion=5.5.0 \
 && mvn dependency:get -DgroupId=com.mchange -DartifactId=c3p0 -Dversion=0.9.5.2

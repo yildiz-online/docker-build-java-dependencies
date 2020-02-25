@@ -49,4 +49,6 @@ RUN mvn -v \
 && mvn dependency:get -DgroupId=org.liquibase -DartifactId=liquibase-core -Dversion=3.8.0 \
 && mvn dependency:get -DgroupId=org.openjfx -DartifactId=javafx-graphics -Dversion=13.0.2 \
 && mvn dependency:get -DgroupId=net.java.dev.jna -DartifactId=jna -Dversion=5.5.0 \
-&& mvn dependency:get -DgroupId=com.mchange -DartifactId=c3p0 -Dversion=0.9.5.2
+&& mvn dependency:get -DgroupId=com.mchange -DartifactId=c3p0 -Dversion=0.9.5.2 \
+&& mvn dependency:get -DgroupId=org.update4j -DartifactId=update4j -Dversion=1.4.4 \
+&& mvn dependency:get -DgroupId=com.thoughtworks.qdox -DartifactId=qdox -Dversion=2.0-M9 \

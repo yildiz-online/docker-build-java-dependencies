@@ -33,7 +33,7 @@ RUN mvn -v \
 && mvn dependency:get -DgroupId=org.apache.maven.plugins -DartifactId=maven-enforcer-plugin -Dversion=1.4.1 \
 && mvn dependency:get -DgroupId=org.owasp -DartifactId=dependency-check-maven -Dversion=5.2.2 \
 && mvn dependency:get -DgroupId=pl.project13.maven -DartifactId=git-commit-id-plugin -Dversion=2.2.5 \
-&& mvn dependency:get -DgroupId=org.junit.jupiter -DartifactId=junit-jupiter-engine -Dversion=5.6.0 \
+&& mvn dependency:get -DgroupId=org.junit.jupiter -DartifactId=junit-jupiter-engine -Dversion=5.6.2 \
 && mvn dependency:get -DgroupId=org.sonatype.plexus -DartifactId=plexus-cipher -Dversion=1.7 \
 && mvn dependency:get -DgroupId=org.apache.httpcomponents -DartifactId=httpclient -Dversion=4.5.5 \
 && mvn dependency:get -DgroupId=com.intellij -DartifactId=annotations -Dversion=9.0.4 \
@@ -50,5 +50,5 @@ RUN mvn -v \
 && mvn dependency:get -DgroupId=org.openjfx -DartifactId=javafx-graphics -Dversion=13.0.2 \
 && mvn dependency:get -DgroupId=net.java.dev.jna -DartifactId=jna -Dversion=5.5.0 \
 && mvn dependency:get -DgroupId=com.mchange -DartifactId=c3p0 -Dversion=0.9.5.2 \
-&& mvn dependency:get -DgroupId=org.update4j -DartifactId=update4j -Dversion=1.4.4 \
+&& mvn dependency:get -DgroupId=org.update4j -DartifactId=update4j -Dversion=1.4.5 \
 && mvn dependency:get -DgroupId=com.thoughtworks.qdox -DartifactId=qdox -Dversion=2.0-M9 \

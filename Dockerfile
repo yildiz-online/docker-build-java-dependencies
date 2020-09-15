@@ -1,6 +1,6 @@
 FROM moussavdb/build-java
 
-RUN apt install openssh-client
+RUN apt-get -y install openssh-client
 
 RUN mvn -v \
 && mvn dependency:get -DgroupId=org.apache.maven.plugins -DartifactId=maven-clean-plugin -Dversion=3.1.0 \

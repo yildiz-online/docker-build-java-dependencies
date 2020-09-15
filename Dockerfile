@@ -17,9 +17,9 @@ RUN mvn -v \
 && mvn dependency:get -DgroupId=org.apache.maven.plugins -DartifactId=maven-scm-plugin -Dversion=1.10.0 \
 && mvn dependency:get -DgroupId=org.apache.maven.plugins -DartifactId=maven-release-plugin -Dversion=2.5.3 \
 && mvn dependency:get -DgroupId=pl.project13.maven -DartifactId=git-commit-id-plugin -Dversion=4.0.0 \
-&& mvn dependency:get -DgroupId=be.yildiz-games -DartifactId=parent -Dversion=3.0.11 -Dpackaging=pom\
+&& mvn dependency:get -DgroupId=be.yildiz-games -DartifactId=parent -Dversion=3.0.13 -Dpackaging=pom\
 && mvn dependency:get -DgroupId=be.yildiz-games -DartifactId=common-compression -Dversion=2.0.6 \
-&& mvn dependency:get -DgroupId=be.yildiz-games -DartifactId=common-configuration -Dversion=1.3.3 \
+&& mvn dependency:get -DgroupId=be.yildiz-games -DartifactId=common-configuration -Dversion=1.3.4 \
 && mvn dependency:get -DgroupId=org.sonatype.plugins -DartifactId=nexus-staging-maven-plugin -Dversion=1.6.8 \
 && mvn dependency:get -DgroupId=com.github.wvengen -DartifactId=proguard-maven-plugin -Dversion=2.0.14 \
 && mvn dependency:get -DgroupId=com.akathist.maven.plugins.launch4j -DartifactId=launch4j-maven-plugin -Dversion=1.7.21 \
@@ -47,8 +47,8 @@ RUN mvn -v \
 && mvn dependency:get -DgroupId=org.apache.activemq -DartifactId=activemq-broker -Dversion=5.15.10 \
 && mvn dependency:get -DgroupId=org.ow2.asm -DartifactId=asm -Dversion=7.0 \
 && mvn dependency:get -DgroupId=org.liquibase -DartifactId=liquibase-core -Dversion=3.8.0 \
-&& mvn dependency:get -DgroupId=org.openjfx -DartifactId=javafx-graphics -Dversion=13.0.2 \
-&& mvn dependency:get -DgroupId=net.java.dev.jna -DartifactId=jna -Dversion=5.5.0 \
+&& mvn dependency:get -DgroupId=org.openjfx -DartifactId=javafx-graphics -Dversion=15 \
+&& mvn dependency:get -DgroupId=net.java.dev.jna -DartifactId=jna -Dversion=5.6.0 \
 && mvn dependency:get -DgroupId=com.mchange -DartifactId=c3p0 -Dversion=0.9.5.2 \
-&& mvn dependency:get -DgroupId=org.update4j -DartifactId=update4j -Dversion=1.4.5 \
+&& mvn dependency:get -DgroupId=org.update4j -DartifactId=update4j -Dversion=1.5.3 \
 && mvn dependency:get -DgroupId=com.thoughtworks.qdox -DartifactId=qdox -Dversion=2.0-M9 \
